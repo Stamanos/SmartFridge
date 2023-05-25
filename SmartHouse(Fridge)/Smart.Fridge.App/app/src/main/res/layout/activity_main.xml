@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thema.smartfridge.MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_temptature"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/temprature"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ib_calendar" />
+
+    <ImageButton
+        android:id="@+id/ib_calendar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/calendar"
+        android:layout_above="@+id/ib_settings"
+        android:layout_toStartOf="@+id/ib_products" />
+
+    <ImageButton
+        android:id="@+id/ib_products"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/products"
+        android:layout_alignTop="@+id/ib_calendar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/ib_settings"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/settings"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ib_products" />
+
+    <ImageButton
+        android:id="@+id/ib_shop"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/shopping"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ib_products" />
+
+    <ImageButton
+        android:id="@+id/ib_fridge"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/fridge"
+        android:layout_alignTop="@+id/ib_products"
+        android:layout_toEndOf="@+id/ib_products" />
+
+    <TimePicker
+        android:id="@+id/timePicker3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
